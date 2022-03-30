@@ -7,5 +7,11 @@ namespace DotnetBakery.Models
 {
     public class Baker 
     {
+        public int id {get; set;} // this is apparently not required as its required by default.
+        
+        [Required] // attribute
+        //just like NOT NULL
+        public string name {get; set;}
+
     }
 }
